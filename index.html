@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>epixAI Studio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html, body {
       background: #080808;
       color: #fff;
-      font-family: 'Inter', sans-serif;
+      font-family: "Inter", sans-serif;
       height: 100dvh;
       display: flex;
       align-items: center;
@@ -18,40 +18,32 @@
       text-align: center;
     }
     body::before {
-      content: '';
+      content: "";
       position: fixed;
       top: -200px; left: 50%;
       transform: translateX(-50%);
-      width: 600px; height: 400px;
-      background: radial-gradient(ellipse, rgba(255,106,0,0.12) 0%, transparent 70%);
+      width: 800px; height: 500px;
+      background: radial-gradient(ellipse, rgba(255,106,0,0.10) 0%, transparent 70%);
       pointer-events: none;
     }
-    .wrap { position: relative; padding: 40px 20px; }
-    img { height: 48px; width: auto; margin-bottom: 32px; }
-    h1 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(36px, 10vw, 72px);
-      letter-spacing: 4px;
-      background: linear-gradient(180deg, #fff 60%, rgba(255,255,255,0.3));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-bottom: 16px;
+    .wrap { position: relative; padding: 40px 20px; display: flex; flex-direction: column; align-items: center; gap: 28px; }
+    .logo-img {
+      width: min(560px, 88vw);
+      height: auto;
+      display: block;
     }
     p {
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 300;
-      color: rgba(255,255,255,0.4);
-      letter-spacing: 3px;
+      color: rgba(255,255,255,0.35);
+      letter-spacing: 4px;
       text-transform: uppercase;
     }
-    .dot { color: #FF6A00; -webkit-text-fill-color: #FF6A00; }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <img src="./logo.png" alt="epixAI Studio" onerror="this.style.display='none'" />
-    <h1>epix<span class="dot">AI</span>.studio</h1>
+    <img class="logo-img" src="./logo.png" alt="epixAI Studio" />
     <p>Something cinematic is coming</p>
   </div>
 </body>
